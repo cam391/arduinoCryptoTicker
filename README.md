@@ -5,7 +5,7 @@
 <p>
 A simple cryptocurrency ticker using an arduino uno and a 16x2 LCD display.
   
-The project works through using a computer to access price and price change data through Binance's API, and then sending the data over a USB serial port to the arduino upon request. The arduino then parses the data sent from the computer, and displays it on a 16x2 LCD.
+The project works through using a computer to access price and price change data through <a href="https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md">Binance's API</a>, and then sending the data over a USB serial port to the arduino upon request. The arduino then parses the data sent from the computer, and displays it on a 16x2 LCD.
 </p>
 
 <h2>Hardware</h2>
