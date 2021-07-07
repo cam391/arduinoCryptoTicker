@@ -5,7 +5,7 @@
 LiquidCrystal lcd = LiquidCrystal(2, 3, 4, 5, 6, 7);
 
 // Desired display time (in seconds)
-displayTime = 12
+int displayTime = 12;
 
 // String array of data to be displated on the lcd.
 String displayData[2];
