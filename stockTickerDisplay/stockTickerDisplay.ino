@@ -4,6 +4,9 @@
 // Create an LCD object. Parameters: (RS, E, D4, D5, D6, D7):
 LiquidCrystal lcd = LiquidCrystal(2, 3, 4, 5, 6, 7);
 
+// Desired display time (in seconds)
+displayTime = 12
+
 // String array of data to be displated on the lcd.
 String displayData[2];
 
@@ -21,8 +24,8 @@ void loop() {
   // If the computer has sent something over the serial port.
   if (Serial.available() > 0) {
 
-    // Wait 5 seconds
-    delay(5000);
+    // Wait half the desired display time
+    delay(displayTime*500);
 
     // Read data from serial port into displayData array.
     for (int i = 0; i < 2; i++) {
@@ -49,6 +52,6 @@ void loop() {
   // Send a 1 to computer (requests next ticker).
   Serial.write(1);
 
-  // Wait 5 seconds.
-  delay(5000);
+    // Wait half the desired display time
+  delay(displayTime*500);
 }
